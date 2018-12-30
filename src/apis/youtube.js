@@ -2,13 +2,11 @@ import axios from 'axios';
 
 const API_KEY = process.env.REACT_APP_API_KEY_YT;
 
-export default axios.create({
+export default  axios.create({
   baseURL: 'https://www.googleapis.com/youtube/v3',
   params: {
-    part: 'snippet',
+    part:'snippet',
     maxResults: 5,
-    key:API_KEY
-  }
+    key: API_KEY
 }
-  
-);
+});
